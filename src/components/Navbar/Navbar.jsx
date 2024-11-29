@@ -3,6 +3,9 @@ import React from 'react';
 // icons
 import { IoMdMenu } from 'react-icons/io';
 
+// motion
+import { motion } from 'framer-motion';
+
 const NavMenuBar = [
 	{
 		id: 1,
@@ -33,8 +36,12 @@ const NavMenuBar = [
 
 const Navbar = () => {
 	return (
-		<nav>
-			<div className="container py-10 flex justify-between items-center">
+		<nav className="relative z-20">
+			<motion.div
+				initial={{ opacity: 0, y: -50 }}
+				animate={{ opacity: 1, y: 0 }}
+				className="container py-10 flex justify-between items-center"
+			>
 				{/* Logo section */}
 				<div>
 					<h1 className="font-bold text-2xl">The Coding Journey</h1>
@@ -59,7 +66,10 @@ const Navbar = () => {
 					</ul>
 				</div>
 				{/* Mobile Hamburger menu section */}
-			</div>
+				<div className="lg:hidden">
+					<IoMdMenu className="text-4xl" />
+				</div>
+			</motion.div>
 		</nav>
 	);
 };

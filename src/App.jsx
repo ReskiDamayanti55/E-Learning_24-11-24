@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './components/Hero/Hero';
 import Service from './components/Service/Service';
 import Banner from './components/Banner/Banner';
+import Subscribe from './components/Subscribe/Subscribe';
 
 const App = () => {
 	return (
@@ -9,6 +10,7 @@ const App = () => {
 			<Hero />
 			<Service />
 			<Banner />
+			<Subscribe />
 		</main>
 	);
 };

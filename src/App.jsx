@@ -4,6 +4,7 @@ import Service from './components/Service/Service';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
 import Banner2 from './components/Banner/Banner2';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Banner />
 			<Subscribe />
 			<Banner2 />
+			<Footer />
 		</main>
 	);
 };
